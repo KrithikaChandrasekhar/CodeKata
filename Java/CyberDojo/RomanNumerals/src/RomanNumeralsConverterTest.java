@@ -20,6 +20,19 @@ public class RomanNumeralsConverterTest {
         assertEquals("VI", RomanNumeralConverter.toRoman(6));
         assertEquals("IX", RomanNumeralConverter.toRoman(9));
         assertEquals("X", RomanNumeralConverter.toRoman(10));
+        assertEquals("XL", RomanNumeralConverter.toRoman(40));
+        assertEquals("L", RomanNumeralConverter.toRoman(50));
+        assertEquals("XC", RomanNumeralConverter.toRoman(90));
+        assertEquals("C", RomanNumeralConverter.toRoman(100));
+        assertEquals("CD", RomanNumeralConverter.toRoman(400));
+        assertEquals("D", RomanNumeralConverter.toRoman(500));
+        assertEquals("CM", RomanNumeralConverter.toRoman(900));
+        assertEquals("M", RomanNumeralConverter.toRoman(1000));
+    }
+
+    @Test
+    public void testMaximumBoundary() {
+        assertEquals("MMMCMXCIX", RomanNumeralConverter.toRoman(3999));
     }
 
 
