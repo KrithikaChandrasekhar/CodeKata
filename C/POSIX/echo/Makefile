@@ -8,6 +8,7 @@ test: echo
 	diff <(echo) <(./echo)
 	diff <(echo foo) <(./echo foo)
 	diff <(echo "foo bar") <(./echo "foo bar")
+	diff <(echo foo bar) <(./echo foo bar)
 
 .PHONY: clean
 clean::
