@@ -10,6 +10,7 @@ test: cat
 	diff actualStdout.txt expectedStdout.txt
 	diff <(cat fileDoNotExist.txt) <(./cat fileDoNotExist.txt)
 	diff <(cat fileToPrint.txt) <(./cat fileToPrint.txt)
+	diff <(cat fileToPrint.txt fileDoNotExist.txt) <(./cat fileToPrint.txt fileDoNotExist.txt)
 
 .PHONY: clean
 clean::
