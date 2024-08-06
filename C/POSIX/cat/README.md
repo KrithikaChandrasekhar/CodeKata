@@ -9,3 +9,4 @@
 
 # Test cases
 - When calling `cat` without arguments, then it reads standard input. Also it reacts to F)F on STDIN.
+- When calling `cat fileToPrint.txt`, then it prints the content of the files on standard output.
