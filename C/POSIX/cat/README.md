@@ -12,3 +12,4 @@
 - When calling `cat fileToPrint.txt`, then it prints the content of the files on standard output.
 - When calling `cat fileDoNotExist.txt`, then it prints "cat: fileDoNotExist.txt: No such file or directory" on the console.
 - When calling `cat fileToPrint.txt fileDoNotExist.txt`, then it prints the content of fileToPrint.txt and cat: fileDoNotExist.txt: No such file or directory on the standard output.
+- When calling `cat cat`, then it prints the file on standard output.
