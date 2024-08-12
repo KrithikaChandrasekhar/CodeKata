@@ -1,4 +1,4 @@
-## 'head'
+# 'head'
 `head` is a unix program that reads data from a file and display the beginning of files as output.
 
 # Test strategy
