@@ -16,6 +16,9 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.3")
     testImplementation("io.ktor:ktor-server-tests:2.3.3")
 
+    implementation("ch.qos.logback:logback-classic:1.2.6")
+
+
     testImplementation(kotlin("test"))
 }
 
