@@ -7,6 +7,10 @@ fun Application.configureRouting() {
         get("/") {
             call.respondText("Hello, world!")
         }
+
+        get("/about") {
+            call.respondText("About Us")
+        }
     }
 
 }
