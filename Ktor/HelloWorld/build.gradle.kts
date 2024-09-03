@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.0.0"
+    kotlin("plugin.serialization") version "1.9.0"
 }
 
 group = "org.example"
@@ -14,6 +15,7 @@ dependencies {
     implementation("io.ktor:ktor-server-netty:2.3.3")
     implementation("io.ktor:ktor-server-content-negotiation:2.3.3")
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
     testImplementation("io.ktor:ktor-server-tests:2.3.3")
 
     implementation("ch.qos.logback:logback-classic:1.2.6")
