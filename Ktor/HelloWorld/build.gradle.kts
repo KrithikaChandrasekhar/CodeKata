@@ -15,12 +15,10 @@ dependencies {
     implementation("io.ktor:ktor-server-netty:2.3.3")
     implementation("io.ktor:ktor-server-content-negotiation:2.3.3")
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.3")
+    implementation("io.ktor:ktor-server-auth:2.3.3")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
     testImplementation("io.ktor:ktor-server-tests:2.3.3")
-
     implementation("ch.qos.logback:logback-classic:1.2.6")
-
-
     testImplementation(kotlin("test"))
 }
 
