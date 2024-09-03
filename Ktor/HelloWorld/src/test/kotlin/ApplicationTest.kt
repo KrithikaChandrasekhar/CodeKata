@@ -30,4 +30,27 @@ class ApplicationTest {
             assertEquals("Hello, world!", bodyAsText())
         }
     }
+
+    @Test
+    fun testAbout() = testApplication {
+        application {
+            install(Authentication) {
+                basic(name = "John Doe") {
+                    realm = "Ktor Server"
+                    validate { credentials ->
+                        if (credentials.name == "John Doe" && credentials.password == "password") {
+                            UserIdPrincipal(credentials.name)
+                        } else {
+                            null
+                        }
+                    }
+                }
+            }
+            configureRouting()
+        }
+        client.get("/about").apply {
+            assertEquals(HttpStatusCode.OK, status)
+            assertEquals("About Us", bodyAsText())
+        }
+    }
 }
